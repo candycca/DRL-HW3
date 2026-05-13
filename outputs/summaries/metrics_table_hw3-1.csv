@@ -1,0 +1,4 @@
+experiment,mean_reward,success_rate,mean_steps,mean_loss
+naive_static,-11.25,0.0,2.25,0.005594119892926563
+replay_static,3.7,1.0,7.3,0.00159101651765268
+replay_random,-10.833333333333334,0.7,17.633333333333333,0.1419218975366422
