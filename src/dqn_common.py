@@ -81,6 +81,11 @@ class TrainConfig:
     replay_capacity: int = 2000
     target_update: int = 50
     board_size: int = 4
+    n_step: int = 3
+    per_alpha: float = 0.6
+    per_beta: float = 0.4
+    per_eps: float = 1e-6
+    noisy_std_init: float = 0.5
 
 
 def is_converged(metrics: Sequence[dict], config: TrainConfig) -> bool:
