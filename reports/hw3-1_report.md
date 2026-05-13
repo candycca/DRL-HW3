@@ -1,3 +1,15 @@
+# 實驗環境說明
+- **Gridworld 4x4**：4x4 棋盤，狀態由 Player、Goal、Pit、Wall 的位置組成。
+	- **行為空間**：上/下/左/右（u/d/l/r）。
+	- **終止條件**：抵達 Goal（成功）或掉入 Pit（失敗）。
+	- **獎勵**：Goal = +10、Pit = -10、其餘步驟 = -1。
+	- **牆與邊界**：撞牆或越界不會移動。
+
+# Mode 說明
+- **static mode**：Goal、Pit、Wall 位置固定，Player 初始位置固定。
+- **random mode**：Player、Goal、Pit、Wall 位置隨機初始化（需通過合法棋盤檢查）。
+- **player mode**：Goal、Pit、Wall 固定，Player 初始位置隨機初始化。
+
 # HW3-1 報告（Naive DQN / Replay）
 
 ## 實驗目標
@@ -7,22 +19,8 @@
 2. **DQN + Replay（static）**：加入 Experience Replay，場景固定，驗證 Replay 機制是否能顯著提升收斂速度與成功率。
 3. **DQN + Replay（random）**：加入 Experience Replay，場景隨機初始化，評估模型在動態環境下的泛化能力。
 
-## 實驗設定摘要
-- 環境：Gridworld 4x4
-- 訓練任務：Naive DQN（static）、DQN+Replay（static）、DQN+Replay（random）
-- 評估方式：以最後 10 回合平均指標作彙總
 
-## 實驗環境說明
-- **Gridworld 4x4**：4x4 棋盤，狀態由 Player、Goal、Pit、Wall 的位置組成。
-	- **行為空間**：上/下/左/右（u/d/l/r）。
-	- **終止條件**：抵達 Goal（成功）或掉入 Pit（失敗）。
-	- **獎勵**：Goal = +10、Pit = -10、其餘步驟 = -1。
-	- **牆與邊界**：撞牆或越界不會移動。
 
-## Mode 說明
-- **static mode**：Goal、Pit、Wall 位置固定，Player 初始位置固定。
-- **random mode**：Player、Goal、Pit、Wall 位置隨機初始化（需通過合法棋盤檢查）。
-- **player mode**：Goal、Pit、Wall 固定，Player 初始位置隨機初始化。
 
 
 

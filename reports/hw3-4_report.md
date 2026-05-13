@@ -4,7 +4,6 @@
 本實驗旨在探討將多種 DQN 改良技術整合為 **Rainbow DQN** 後，在 Gridworld 4x4（random mode）隨機環境下的實際表現。以標準 DQN + Replay（Baseline）為對照，分析 Rainbow DQN 的五種核心技術是否能在複雜、多變的場景中帶來顯著的性能提升，並探討各技術在小型環境中的潛在限制。
 
 
-
 ## Rainbow DQN 技術構成與原理說明
 
 Rainbow DQN（Hessel et al., 2017）整合了六項 DQN 改良技術（本實驗實作其中五項），各技術原理如下：
