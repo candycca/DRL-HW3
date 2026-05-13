@@ -19,11 +19,15 @@
 	- **終止條件**：抵達 Goal（成功）或掉入 Pit（失敗）。
 	- **獎勵**：Goal = +10、Pit = -10、其餘步驟 = -1。
 	- **牆與邊界**：撞牆或越界不會移動。
-
-# Mode 說明
+   
+#   Mode 說明
 - **static mode**：Goal、Pit、Wall 位置固定，Player 初始位置固定。
 - **random mode**：Player、Goal、Pit、Wall 位置隨機初始化（需通過合法棋盤檢查）。
 - **player mode**：Goal、Pit、Wall 固定，Player 初始位置隨機初始化。
+
+
+![Gridworld 環境示意圖](../outputs/summaries/gridworld_env_illustration.png)
+
 
 # HW3-1 報告（Naive DQN / Replay）
 

@@ -51,4 +51,4 @@ def render_board(board_array: np.ndarray, scale: int = 32) -> np.ndarray:
 
 
 def make_dashboard_gif(frames: Iterable[np.ndarray], output_path: str, fps: int = 4) -> None:
-    imageio.mimsave(output_path, list(frames), fps=fps)
+    imageio.mimsave(output_path, list(frames), fps=fps, loop=0)

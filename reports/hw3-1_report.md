@@ -10,6 +10,7 @@
 - **random mode**：Player、Goal、Pit、Wall 位置隨機初始化（需通過合法棋盤檢查）。
 - **player mode**：Goal、Pit、Wall 固定，Player 初始位置隨機初始化。
 
+![Gridworld 環境示意圖](../outputs/summaries/gridworld_env_illustration.png)
 # HW3-1 報告（Naive DQN / Replay）
 
 ## 實驗目標
